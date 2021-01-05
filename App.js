@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {View, Text} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import SplashScreen from './Screens/SplashScreen';
 import Onboarding1 from './Screens/Onboarding1';
@@ -13,24 +13,22 @@ import Menu from './Screens/Menu';
 import Order from './Screens/Order';
 
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 
 const App = () => {
   return (
-    <NavigationContainer>
-   <Tab.Navigator>
-    <Tab.Screen name="SplashScreen" component={SplashScreen} />
-    <Tab.Screen name="Onboarding1" component={Onboarding1} />
-    <Tab.Screen name="Onboarding2" component={Onboarding2} />
-    <Tab.Screen name="Onboarding3" component={Onboarding3} />
-    <Tab.Screen name="Home" component={Home} />
-    <Tab.Screen name="Menu" component={Menu} />
-    <Tab.Screen name="Order" component={Order} />
-   </Tab.Navigator>
-
-
-    </NavigationContainer> 
+  <NavigationContainer>
+   <Stack.Navigator>
+   <Stack.Screen name="Home" component={Home} />
+    <Stack.Screen name="SplashScreen" component={SplashScreen} />
+    <Stack.Screen name="Onboarding1" component={Onboarding1} />
+    <Stack.Screen name="Onboarding2" component={Onboarding2} />
+    <Stack.Screen name="Onboarding3" component={Onboarding3} />
+    <Stack.Screen name="Menu" component={Menu} />
+    <Stack.Screen name="Order" component={Order} />
+   </Stack.Navigator>
+  </NavigationContainer> 
   );
 };
 

@@ -9,6 +9,8 @@ const Meat = require('../assets/images/Car.png');
 const Pasta = require('../assets/images/Pasta.png');
 const Veg1 = require('../assets/images/Veg1.png');
 const Veg2 = require('../assets/images/Veg2.png');
+const Circle = require('../assets/images/Circle.png');
+const Rectangle = require('../assets/images/Rectangle.png');
 
 export default{
     Car,
@@ -22,4 +24,6 @@ export default{
     Pasta,
     Veg1,
     Veg2,
+    Circle,
+    Rectangle
 }

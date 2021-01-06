@@ -37,9 +37,9 @@ export const FONTS = {
 
     h1:{fontFamily: 'Poppins-SemiBold', fontSize: SIZES.h1, lineHeight: 76},
     h2:{fontFamily: 'Poppins-Regular', fontSize: SIZES.h5, lineHeight: 30},
-    h3:{fontFamily: 'Poppins-Regular', fontSize: SIZES.h8, lineHeight: 21},
+    h3:{fontFamily: 'Poppins-Medium', fontSize: SIZES.h8, lineHeight: 21},
     h4:{fontFamily: 'Poppins-Medium', fontSize: SIZES.h2, lineHeight: 46},
-    h5:{fontFamily: 'Poppins-Regular', fontSize: SIZES.h7, lineHeight: 23},
+    h5:{fontFamily: 'Poppins-Regular', fontSize: SIZES.h7, lineHeight: 23, textAlign: 'center'},
     h6:{fontFamily: 'Poppins-SemiBold', fontSize: SIZES.h1, lineHeight: 76},
     h7:{fontFamily: 'Poppins-Light', fontSize: SIZES.h3, lineHeight: 35},
     h8:{fontFamily: 'Poppins-Light', fontSize: SIZES.h5, lineHeight: 30},

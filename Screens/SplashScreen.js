@@ -5,8 +5,8 @@ import { images, COLORS } from '../constants'
 const SplashScreen = () => {
   return (
     <View style ={{ flex:1, backgroundColor :COLORS.primary}}>
-      <View style ={{ flexDirection:'row', flex:1, backgroundColor :COLORS.primary, alignSelf:'center'}}>
-      <Image style ={{ flexDirection:'column', alignSelf:'center'}}
+      <View style ={{ flexDirection:'row', flex:1, alignSelf:'center'}}>
+      <Image style ={{ alignSelf:'center'}}
       source={images.FM}
       resizeMode='contain'
       />

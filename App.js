@@ -19,9 +19,12 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
   <NavigationContainer>
-   <Stack.Navigator screenOptions={{
+   <Stack.Navigator 
+   screenOptions={{
     headerShown: false
-  }}>
+  }}
+  initialRouteName="SplashScreen"
+  >
    <Stack.Screen name="Home" component={Home} />
     <Stack.Screen name="SplashScreen" component={SplashScreen} />
     <Stack.Screen name="Onboarding1" component={Onboarding1} />

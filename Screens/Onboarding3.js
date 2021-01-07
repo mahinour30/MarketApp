@@ -28,7 +28,7 @@ const Onboarding3 = ({navigation}) => {
       <View>
       <TouchableOpacity 
       onPress={()=>navigation.navigate('Home')}
-      style={{ marginEnd:30, paddingTop:38, alignSelf:'flex-end'}}>
+      style={{ marginEnd:30, paddingTop:33, alignSelf:'flex-end'}}>
           <ImageBackground source={images.Rectangle} 
             style={{height:45, width:110, alignSelf:'flex-end'}}
             >
@@ -44,11 +44,16 @@ const Onboarding3 = ({navigation}) => {
         </TouchableOpacity>
       </View>
 
+      <View style={{paddingTop:50, paddingRight:33}}>
+          <Image
+          source={images.Third}
+          />
+        </View>
 
       <View>
       <TouchableOpacity 
       onPress={()=>navigation.navigate('Onboarding2')}
-      style={{ marginEnd:200, paddingTop:38, alignSelf:'flex-end'}}>
+      style={{  marginEnd: 103,paddingTop:33, alignSelf:'flex-end'}}>
           <ImageBackground source={images.Circle} 
             style={{height:45, width:45, alignSelf:'flex-end'}}
             >

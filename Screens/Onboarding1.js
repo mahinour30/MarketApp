@@ -24,12 +24,18 @@ const Onboarding1 = ({navigation}) => {
         </Text>
       </View>
 
-      <View style={{flexDirection:'row-reverse'}}>
+      <View style={{flexDirection:'row'}}>
+
+      <View style={{paddingTop:55,paddingLeft:173}}>
+          <Image
+          source={images.First}
+          />
+        </View>
       <View>
 
       <TouchableOpacity 
       onPress={()=>navigation.navigate('Onboarding2')}
-      style={{ marginEnd:30, paddingTop:38, alignSelf:'flex-end'}}>
+      style={{ marginStart:101, paddingTop:39, alignSelf:'flex-end'}}>
           <ImageBackground source={images.Circle} 
             style={{height:45, width:45, alignSelf:'flex-end'}}
             >

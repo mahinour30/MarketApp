@@ -11,6 +11,9 @@ const Veg1 = require('../assets/images/Veg1.png');
 const Veg2 = require('../assets/images/Veg2.png');
 const Circle = require('../assets/images/Circle.png');
 const Rectangle = require('../assets/images/Rectangle.png');
+const First = require('../assets/images/First.png');
+const Second = require('../assets/images/Second.png');
+const Third = require('../assets/images/Third.png');
 
 export default{
     Car,
@@ -25,5 +28,8 @@ export default{
     Veg1,
     Veg2,
     Circle,
-    Rectangle
+    Rectangle,
+    First,
+    Second,
+    Third,
 }

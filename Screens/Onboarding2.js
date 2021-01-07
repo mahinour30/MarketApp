@@ -45,11 +45,16 @@ const Onboarding2 = ({navigation}) => {
         </TouchableOpacity>
       </View>
 
+      <View style={{paddingTop:55, paddingHorizontal:100}}>
+          <Image
+          source={images.Second}
+          />
+        </View>
 
       <View>
       <TouchableOpacity 
        onPress={()=>navigation.navigate('Onboarding1')}
-      style={{ marginEnd:265, paddingTop:38, alignSelf:'flex-end'}}>
+      style={{  paddingTop:38, alignSelf:'flex-end'}}>
           <ImageBackground source={images.Circle} 
             style={{height:45, width:45, alignSelf:'flex-end'}}
             >

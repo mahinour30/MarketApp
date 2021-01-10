@@ -62,37 +62,91 @@ const Home = ({navigation}) => {
 
 
      <View style={{flexDirection:'row', paddingVertical:5, paddingHorizontal:20}}>
-     <Image
+
+     <ImageBackground
        style={{width:'50%', height:SIZES.height*0.26}}
-       source={images.Veg1}
-       resizeMode='contain'
-       />
-       <Image
+       
+       >
+
+         <Image 
+            style={{width:'100%', height:SIZES.height*0.26}}
+            source={images.Veg1}
+            resizeMode='contain' 
+            />
+            <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
+
+            </View>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
+       </ImageBackground>
+
+
+
+       <ImageBackground
        style={{width:'50%', height:SIZES.height*0.26}}
-       source={images.Pasta}
-       resizeMode='contain'
-       />
+       
+       >
+
+         <Image 
+            style={{width:'100%', height:SIZES.height*0.26}}
+            source={images.Pasta}
+            resizeMode='contain' 
+            />
+            <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
+
+            </View>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
+       </ImageBackground>
+
+
      </View>
 
      <View>
-       <Image
+       <ImageBackground
        style={{width:'90%', height:SIZES.height*0.16,alignSelf:'center'}}
        source={images.Fruit3}
        resizeMode='contain'
-       />
+       >
+
+    <Text style={{color:COLORS.black1, position:'absolute', zIndex:999, bottom:40, left:30,...FONTS.h2}}>Lorem ipsum</Text>
+
+       </ImageBackground>
      </View>
 
      <View style={{flexDirection:'row', paddingVertical:5, paddingHorizontal:20}}>
-     <Image
+     <ImageBackground
        style={{width:'50%', height:SIZES.height*0.26}}
-       source={images.Fruit2}
-       resizeMode='contain'
-       />
-       <Image
+       
+       >
+
+         <Image 
+            style={{width:'100%', height:SIZES.height*0.26}}
+            source={images.Fruit2}
+            resizeMode='contain' 
+            />
+            <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
+
+            </View>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
+       </ImageBackground>
+
+       
+       <ImageBackground
        style={{width:'50%', height:SIZES.height*0.26}}
-       source={images.Fruit1}
-       resizeMode='contain'
-       />
+       
+       >
+
+         <Image 
+            style={{width:'100%', height:SIZES.height*0.26}}
+            source={images.Fruit1}
+            resizeMode='contain' 
+            />
+            <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
+
+            </View>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
+       </ImageBackground>
+
+
      </View>
 
   </ScrollView>     

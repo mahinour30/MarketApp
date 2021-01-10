@@ -30,7 +30,7 @@ const Onboarding3 = ({navigation}) => {
       onPress={()=>navigation.navigate('Home')}
       style={{ marginEnd:30, paddingTop:33, alignSelf:'flex-end'}}>
           <ImageBackground source={images.Rectangle} 
-            style={{height:45, width:110, alignSelf:'flex-end'}}
+            style={{height:45, width:110, alignSelf:'flex-end'}}   
             >
            
               <View style={{

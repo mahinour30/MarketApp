@@ -64,7 +64,7 @@ const Onboarding2 = ({navigation}) => {
               }}>
                <Image
                 source={icons.Left}
-                resizeMode='contain'
+                resizeMode='contain'    
                />  
               </View>
           </ImageBackground>

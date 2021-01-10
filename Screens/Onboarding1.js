@@ -9,7 +9,7 @@ const Onboarding1 = ({navigation}) => {
         <Image
         style={{alignSelf:'center'}}
         source={images.Cart}
-        resizeMode='contain'
+        resizeMode='contain'    
         />
       </View>
       <View style={{ flexDirection:'row', alignSelf:'center'}}>

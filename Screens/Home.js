@@ -1,26 +1,10 @@
-import React, {useState, useEffect} from 'react';
-import {View, Text, Button, ScrollView, FlatList, Image, ImageBackground, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {View, Text, ScrollView, Image, ImageBackground, TouchableOpacity} from 'react-native';
 import {COLORS, FONTS, SIZES, images, icons} from '../constants'
 
-const URL = 'https://5bcce576cf2e850013874767.mockapi.io/task/categories';
 
 
 const Home = ({navigation}) => {
-
-  const [data, setData]=useState([]);
-
-  useEffect(()=>{
-    fetch(URL)
-    .then((response)=> response.json())
-    .then((json)=> {
-      setData(json)
-    })
-    .catch((error) => Alert.alert('Error','Something IS Wrong!'))
-  }, []);
-
-
-  console.log("from home ===>", data)
-
   return (
     <View style={{flex:1, backgroundColor:COLORS.white}}>
 
@@ -82,7 +66,7 @@ const Home = ({navigation}) => {
             <View style={{flex:1, borderRadius:20, backgroundColor:COLORS.darkGrey, opacity:0.2 ,justifyContent:'center', width:'100%', height:'100%',position:'absolute', zIndex:888}}>
 
             </View>
-            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Meats</Text>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
       </TouchableOpacity>
  
     
@@ -97,7 +81,7 @@ const Home = ({navigation}) => {
             <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
 
             </View>
-            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Sea Food</Text>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
     </TouchableOpacity>
 
       
@@ -111,7 +95,7 @@ const Home = ({navigation}) => {
        resizeMode='contain'
        >
 
-    <Text style={{color:COLORS.black1, position:'absolute', zIndex:999, bottom:40, left:30,...FONTS.h2}}>Lorem ipsum</Text>
+    <Text style={{color:COLORS.black1, position:'absolute', zIndex:999, bottom:40, left:30,...FONTS.h2}}>Vegetables</Text>
 
        </ImageBackground>
      </View>
@@ -131,7 +115,7 @@ const Home = ({navigation}) => {
             <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
 
             </View>
-            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Fruits</Text>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
        </TouchableOpacity>
 
        

@@ -72,7 +72,8 @@ const Home = ({navigation}) => {
     
     
 
-    <TouchableOpacity style={{width:'50%', height:'100%'}}>
+    <TouchableOpacity style={{width:'50%', height:'100%'}}
+     onPress={()=>{navigation.navigate('Menu')}}>
          <Image 
             style={{width:'100%', height:SIZES.height*0.26}}
             source={images.Pasta}
@@ -104,7 +105,7 @@ const Home = ({navigation}) => {
        
      <TouchableOpacity
        style={{width:'50%', height:'100%'}}
-       
+       onPress={()=>{navigation.navigate('Menu')}}
        >
 
          <Image 
@@ -121,7 +122,7 @@ const Home = ({navigation}) => {
        
        <TouchableOpacity
        style={{width:'50%', height:'100%'}}
-       
+       onPress={()=>{navigation.navigate('Menu')}}
        >
 
          <Image 

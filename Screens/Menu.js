@@ -1,13 +1,34 @@
-import React from 'react';
-import {View, Text, Button, ScrollView, FlatList, Image, ImageBackground} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {View, Text, Button, ScrollView, FlatList, Image, ImageBackground, Alert} from 'react-native';
 import {COLORS, FONTS, SIZES, images, icons} from '../constants'
 
+const URL = 'https://5bcce576cf2e850013874767.mockapi.io/task/categories';
 
 const Menu = () => {
+
+  const [data, setData]=useState([]);
+
+  useEffect(()=>{
+    fetch(URL)
+    .then((response)=> response.json())
+    .then((json)=> {
+      setData(json)
+    })
+    .catch((error) => Alert.alert('Error','Something IS Wrong!'))
+  }, []);
+
+  console.log("from Menu ===>", data)
+
+
   return (
     <View style={{flex:1, backgroundColor:COLORS.white}}>
       
-     <ImageBackground
+      <FlatList style={{flex:1}}
+      data={data}
+      renderItem={({item})=>{
+    return(
+        <View style ={{flex:1}}> 
+        <ImageBackground
        style={{width:SIZES.width, height:SIZES.height*0.33, flexDirection:'row'}}
        source={images.Meat}
        resizeMode='cover'
@@ -18,7 +39,7 @@ const Menu = () => {
        style={{width:28, height:14, paddingLeft:95,marginTop:20, marginRight:50}}
        />
        <Text style={{...FONTS.h7, color:COLORS.white, paddingTop:10}}>
-           Meat & Seafoodxccx
+           {item.name}
          </Text>
         <Image
        source={icons.SearchIcon2}
@@ -33,6 +54,15 @@ const Menu = () => {
 
             
        </ImageBackground>
+     </View>
+        )
+ }
+
+ }
+/>
+
+
+     
 
 <ScrollView>
 <View>

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, Button, ScrollView, FlatList, Image, ImageBackground} from 'react-native';
+import {View, Text, Button, ScrollView, FlatList, Image, ImageBackground, TouchableOpacity} from 'react-native';
 import {COLORS, FONTS, SIZES, images, icons} from '../constants'
 
 const URL = 'https://5bcce576cf2e850013874767.mockapi.io/task/categories';
@@ -23,6 +23,7 @@ const Home = ({navigation}) => {
 
   return (
     <View style={{flex:1, backgroundColor:COLORS.white}}>
+
      <View style={{backgroundColor:'white', width:'100%', height:SIZES.height*0.08, flexDirection:'row'}}>
        <Image
        source={icons.ListIcon}
@@ -42,7 +43,11 @@ const Home = ({navigation}) => {
      </View>
 
 <ScrollView>
+  
 <View>
+
+  
+  
        <ImageBackground
        style={{width:'100%', height:SIZES.height*0.33}}
        source={images.Veg2}
@@ -61,31 +66,29 @@ const Home = ({navigation}) => {
      </View>
 
 
+     
+
+
      <View style={{flexDirection:'row', paddingVertical:5, paddingHorizontal:20}}>
 
-     <ImageBackground
-       style={{width:'50%', height:SIZES.height*0.26}}
-       
-       >
-
+    <TouchableOpacity  style={{width:'50%', height:'100%'}}
+      onPress={()=>{navigation.navigate('Menu')}}
+    >   
          <Image 
             style={{width:'100%', height:SIZES.height*0.26}}
             source={images.Veg1}
             resizeMode='contain' 
             />
-            <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
+            <View style={{flex:1, borderRadius:20, backgroundColor:COLORS.darkGrey, opacity:0.2 ,justifyContent:'center', width:'100%', height:'100%',position:'absolute', zIndex:888}}>
 
             </View>
-            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
-       </ImageBackground>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Meats</Text>
+      </TouchableOpacity>
+ 
+    
+    
 
-
-
-       <ImageBackground
-       style={{width:'50%', height:SIZES.height*0.26}}
-       
-       >
-
+    <TouchableOpacity style={{width:'50%', height:'100%'}}>
          <Image 
             style={{width:'100%', height:SIZES.height*0.26}}
             source={images.Pasta}
@@ -94,9 +97,10 @@ const Home = ({navigation}) => {
             <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
 
             </View>
-            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
-       </ImageBackground>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Sea Food</Text>
+    </TouchableOpacity>
 
+      
 
      </View>
 
@@ -113,8 +117,9 @@ const Home = ({navigation}) => {
      </View>
 
      <View style={{flexDirection:'row', paddingVertical:5, paddingHorizontal:20}}>
-     <ImageBackground
-       style={{width:'50%', height:SIZES.height*0.26}}
+       
+     <TouchableOpacity
+       style={{width:'50%', height:'100%'}}
        
        >
 
@@ -126,25 +131,25 @@ const Home = ({navigation}) => {
             <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
 
             </View>
-            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
-       </ImageBackground>
+            <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Fruits</Text>
+       </TouchableOpacity>
 
        
-       <ImageBackground
-       style={{width:'50%', height:SIZES.height*0.26}}
+       <TouchableOpacity
+       style={{width:'50%', height:'100%'}}
        
        >
 
          <Image 
             style={{width:'100%', height:SIZES.height*0.26}}
-            source={images.Fruit1}
+            source={images.Veg1}
             resizeMode='contain' 
             />
             <View style={{flex:1, borderRadius:18, backgroundColor:COLORS.darkGrey, opacity:0.2, width:'100%', height:'100%',position:'absolute', zIndex:888}}>
 
             </View>
             <Text style={{color:COLORS.white, position:'absolute', zIndex:999, bottom:10, left:10,...FONTS.h2}}>Vegetables</Text>
-       </ImageBackground>
+       </TouchableOpacity>
 
 
      </View>

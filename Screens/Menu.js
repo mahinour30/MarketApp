@@ -59,15 +59,17 @@ const Menu = () => {
        <FlatList style={{flex:1}}
         data={categories}
         keyExtractor={item => item.id}
+        horizontal={true}
         renderItem={({item})=>{
     return(
-        <View style={{ flex:1,flexDirection:'row'}}> 
-        <ScrollView style={{width:'100%', height:'100%', flex:1}}>
-          <View style={{ flex:1, width:SIZES.width/2, height:SIZES.height*0.04, borderBottomColor:COLORS.primary,borderBottomWidth:1}}>
+        <View style={{ flex:1}}> 
+        <View style={{width:SIZES.width/2, height:SIZES.height*0.05, borderBottomColor:COLORS.primary,borderBottomWidth:1, marginBottom:10}}>
             <Text style={{...FONTS.h8, color:COLORS.black1, alignSelf:'center'}}>
               {item.name}
             </Text>
           </View>
+        <ScrollView style={{width:'100%', height:'100%', flex:1}}>
+          
           <FlatList
           data={item.products}
           keyExtractor={item => item.id}
